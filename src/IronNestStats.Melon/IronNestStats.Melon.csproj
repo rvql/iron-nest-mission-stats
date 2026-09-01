@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>IronNestStats.Melon</RootNamespace>
+    <AssemblyName>MissionStats</AssemblyName>
+    <MelonLoaderPath Condition="'$(MelonLoaderPath)' == ''">$(IRON_NEST_MELONLOADER)</MelonLoaderPath>
+    <InteropPath Condition="'$(InteropPath)' == ''">$(MelonLoaderPath)\Il2CppAssemblies</InteropPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IronNestStats.Core\IronNestStats.Core.csproj" />
+    <Reference Include="MelonLoader" HintPath="$(MelonLoaderPath)\net6\MelonLoader.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(MelonLoaderPath)\net6\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(InteropPath)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(InteropPath)\UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="Unity.InputSystem" HintPath="$(InteropPath)\Unity.InputSystem.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(InteropPath)\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="Il2Cppmscorlib" HintPath="$(InteropPath)\Il2Cppmscorlib.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="ValidateMelonLoaderReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(MelonLoaderPath)\net6\MelonLoader.dll')"
+           Text="MelonLoader 0.7.x was not found. Set IRON_NEST_MELONLOADER to the game's MelonLoader directory and launch the game once to generate Il2CppAssemblies." />
+  </Target>
+</Project>

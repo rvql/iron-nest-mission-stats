@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionStats.Core", "src\IronNestStats.Core\IronNestStats.Core.csproj", "{7B321A58-61B1-46A8-9446-18B67B6E9D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionStats", "src\IronNestStats.Melon\IronNestStats.Melon.csproj", "{E862D789-A773-4E06-B867-F1A81DB4A403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B321A58-61B1-46A8-9446-18B67B6E9D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B321A58-61B1-46A8-9446-18B67B6E9D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B321A58-61B1-46A8-9446-18B67B6E9D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B321A58-61B1-46A8-9446-18B67B6E9D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E862D789-A773-4E06-B867-F1A81DB4A403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E862D789-A773-4E06-B867-F1A81DB4A403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E862D789-A773-4E06-B867-F1A81DB4A403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E862D789-A773-4E06-B867-F1A81DB4A403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
