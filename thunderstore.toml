@@ -1,0 +1,37 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "rvql"
+name = "MissionStats"
+versionNumber = "0.1.0"
+description = "Displays live mission statistics and medal requirements to help collect mission medals."
+websiteUrl = "https://github.com/rvql/iron-nest-mission-stats"
+containsNsfwContent = false
+
+[package.dependencies]
+LavaGang-MelonLoader = "0.7.3"
+
+[build]
+icon = "./icon.png"
+readme = "./README.en.md"
+outdir = "./artifacts/thunderstore"
+
+[[build.copy]]
+source = "./artifacts/release/MissionStats.dll"
+target = "Mods/MissionStats.dll"
+
+[[build.copy]]
+source = "./artifacts/release/MissionStats.Core.dll"
+target = "UserLibs/MissionStats.Core.dll"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "CHANGELOG.md"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["iron-nest"]
+
+[publish.categories]
+iron-nest = ["mods"]

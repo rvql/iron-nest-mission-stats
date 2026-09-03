@@ -6,7 +6,7 @@
 
 MissionStats is a mission statistics plugin for **IRON NEST: Heavy Turret Simulator**. It displays live mission statistics and medal requirements in-game, making it easier to track progress and collect mission medals.
 
-![MissionStats English in-game screenshot](assets/screenshots/missionstats-en.png)
+![MissionStats English in-game screenshot](https://raw.githubusercontent.com/rvql/iron-nest-mission-stats/main/assets/screenshots/missionstats-en.png)
 
 ## Features
 

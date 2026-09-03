@@ -6,7 +6,7 @@
 
 MissionStats 是用于 **IRON NEST: Heavy Turret Simulator** 的关卡统计插件。它会在游戏中实时展示当前关卡的统计数据与奖章要求，帮助玩家了解本局表现，并更方便地完成和收集关卡奖章。
 
-![MissionStats 中文游戏截图](assets/screenshots/missionstats-zh.png)
+![MissionStats 中文游戏截图](https://raw.githubusercontent.com/rvql/iron-nest-mission-stats/main/assets/screenshots/missionstats-zh.png)
 
 ## 功能
 
